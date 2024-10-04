@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/PRODIGY_WD_02/static/css/main.fea23e89.css",
+    "main.js": "/PRODIGY_WD_02/static/js/main.228b599b.js",
+    "static/media/clock-timer-bg.jpg": "/PRODIGY_WD_02/static/media/clock-timer-bg.8c6bc316f39aad123f45.jpg",
+    "index.html": "/PRODIGY_WD_02/index.html",
+    "main.fea23e89.css.map": "/PRODIGY_WD_02/static/css/main.fea23e89.css.map",
+    "main.228b599b.js.map": "/PRODIGY_WD_02/static/js/main.228b599b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fea23e89.css",
+    "static/js/main.228b599b.js"
+  ]
+}
