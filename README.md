@@ -26,7 +26,7 @@ This repository contains the code for a **simple and functional stopwatch**, cre
    git clone https://github.com/moncefchelm18/PRODIGY_WD_02.git
 2. Navigate to the project directory:
    ```bash
-cd stop-watch
+   cd stop-watch
 3. Open the index.html file in your browser or use a local server to view the stopwatch.
 
 ## Demo
