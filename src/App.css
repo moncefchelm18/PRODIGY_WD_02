@@ -1,0 +1,180 @@
+.stopwatch-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  background: #000;
+  background-image: url("../public/clock-timer-bg.jpg");
+  background-size: 70vh;
+  /* background-color: red; */
+  background-repeat: repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.overlay {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.25);
+  z-index: 1;
+}
+
+.stopwatch {
+  width: 550px;
+}
+
+.stopwatch-display span {
+  width: 80px;
+}
+
+.stopwatch-laps span {
+  /* display: flex; */
+  width: 100px;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+}
+.stopwatch-laps span:first-child {
+  width: 45px;
+  text-wrap: nowrap;
+}
+.laps-table-title span {
+  display: flex;
+  width: 100px;
+  justify-content: space-between;
+  align-items: center;
+}
+.laps-table-title span:first-child {
+  width: 45px;
+}
+.stopwatch-button {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 8px 16px;
+  border-radius: 28px;
+  width: 150px;
+  /* margin-top: 20px; */
+}
+.stopwatch-button2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 8px 16px;
+  border-radius: 28px;
+  width: 150px;
+  /* margin-top: 20px; */
+}
+.stopwatch-button:hover {
+  transform: scale(1.02);
+}
+.stopwatch-button:active {
+  opacity: 0.9;
+}
+
+.stop-btn {
+  background-color: #8f0000;
+}
+
+.disabled-btn {
+  background-color: #dfdfdf;
+  color: rgb(107, 107, 107);
+  cursor: not-allowed;
+}
+.reset-btn {
+  background-color: rgb(0, 86, 136);
+}
+
+.lap-btn {
+  background-color: rgba(0, 0, 0, 0.85);
+  color: white;
+}
+
+.lap-transition {
+  transition: 0.3s ease-in;
+  transform: scale(1);
+}
+
+.lap-transition-active {
+  transform: scale(1.08);
+  transition: 0.3s ease-out;
+}
+
+@media screen and (max-width: 1279px) {
+  .stopwatch {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .stopwatch {
+    width: 450px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .stopwatch {
+    width: 400px;
+  }
+}
+
+/* Responsive Styles for Smaller Devices */
+@media screen and (max-width: 639px) {
+  .stopwatch {
+    width: 350px;
+  }
+  .stopwatch-display span {
+    width: 40px;
+  }
+
+  .stopwatch-laps span,
+  .laps-table-title span {
+    width: 60px;
+    font-size: 12px;
+    /* justify-content: center; */
+  }
+
+  .stopwatch-button,
+  .stopwatch-button2 {
+    width: 100px;
+    padding: 5px 10px;
+    font-size: 12px;
+    /* margin-top: 15px; */
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .stopwatch {
+    width: 300px;
+  }
+  .stopwatch-display span {
+    width: 40px;
+  }
+
+  .stopwatch-laps span,
+  .laps-table-title span {
+    width: 50px;
+    font-size: 10px;
+    /* justify-content: flex-start; */
+  }
+
+  .stopwatch-button,
+  .stopwatch-button2 {
+    width: 80px;
+    padding: 4px 8px;
+    /* margin-top: 10px; */
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 319px) {
+  .stopwatch {
+    width: 250px;
+  }
+}
