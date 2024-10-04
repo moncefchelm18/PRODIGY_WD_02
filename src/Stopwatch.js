@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import LapContainer from "./LapContainer";
 
-const Stopwatch = () => {
+const StopWatch = () => {
   const [isRunning, setIsRunning] = useState(false);
   const [time, setTime] = useState({ ms: 0, s: 0, m: 0, h: 0 });
   const laps = useRef([]);
@@ -269,4 +269,4 @@ const Stopwatch = () => {
   );
 };
 
-export default Stopwatch;
+export default StopWatch;

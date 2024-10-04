@@ -1,10 +1,10 @@
 import "./App.css";
-import Stopwatch from "./Stopwatch";
+import StopWatch from "./StopWatch";
 
 function App() {
   return (
     <>
-      <Stopwatch />
+      <StopWatch />
     </>
   );
 }
